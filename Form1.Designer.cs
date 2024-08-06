@@ -33,12 +33,12 @@
             label3 = new Label();
             label4 = new Label();
             btnTinh = new Button();
-            listBox1 = new ListBox();
+            lsbKetqua = new ListBox();
             txtSotien = new TextBox();
             cbBLaixuat = new ComboBox();
             lblKetqua = new Label();
-            numericUpDown1 = new NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            nupSonam = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)nupSonam).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -87,14 +87,14 @@
             btnTinh.UseVisualStyleBackColor = true;
             btnTinh.Click += btnTinh_Click;
             // 
-            // listBox1
+            // lsbKetqua
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(126, 224);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(524, 214);
-            listBox1.TabIndex = 5;
+            lsbKetqua.FormattingEnabled = true;
+            lsbKetqua.ItemHeight = 15;
+            lsbKetqua.Location = new Point(126, 224);
+            lsbKetqua.Name = "lsbKetqua";
+            lsbKetqua.Size = new Size(524, 214);
+            lsbKetqua.TabIndex = 5;
             // 
             // txtSotien
             // 
@@ -120,23 +120,23 @@
             lblKetqua.TabIndex = 9;
             lblKetqua.Text = "Kết Quả";
             // 
-            // numericUpDown1
+            // nupSonam
             // 
-            numericUpDown1.Location = new Point(232, 154);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(120, 23);
-            numericUpDown1.TabIndex = 10;
+            nupSonam.Location = new Point(232, 154);
+            nupSonam.Name = "nupSonam";
+            nupSonam.Size = new Size(120, 23);
+            nupSonam.TabIndex = 10;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(numericUpDown1);
+            Controls.Add(nupSonam);
             Controls.Add(lblKetqua);
             Controls.Add(cbBLaixuat);
             Controls.Add(txtSotien);
-            Controls.Add(listBox1);
+            Controls.Add(lsbKetqua);
             Controls.Add(btnTinh);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -144,7 +144,8 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            Load += Form1_Load_1;
+            ((System.ComponentModel.ISupportInitialize)nupSonam).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,10 +157,10 @@
         private Label label3;
         private Label label4;
         private Button btnTinh;
-        private ListBox listBox1;
+        private ListBox lsbKetqua;
         private TextBox txtSotien;
         private ComboBox cbBLaixuat;
         private Label lblKetqua;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown nupSonam;
     }
 }
